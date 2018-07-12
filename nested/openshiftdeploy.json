@@ -54,13 +54,15 @@
 			"type": "string",
 			"metadata": {
 				"description": "OpenShift Master VM public IP fully qualified domain name"
-			}
+			},
+			"defaultValue": "openshift-master.local"
 		},
 		"openshiftMasterPublicIpAddress": {
 			"type": "string",
 			"metadata": {
 				"description": "OpenShift Master VM public IP address"
-			}
+			},
+			"defaultValue": "127.0.0.1"
 		},
 		"openshiftInfraHostname": {
 			"type": "string",
