@@ -8,7 +8,7 @@
 				"description": "Base URL for Template Files",
 				"artifactsBaseUrl": ""
 			},
-			"defaultValue": "https://raw.githubusercontent.com/Microsoft/practiceopenshift/master"
+			"defaultValue": "https://raw.githubusercontent.com/m1v1m2v2/practiceopenshift/master"
 		},
 		"masterVmSize": {
 			"type": "string",
