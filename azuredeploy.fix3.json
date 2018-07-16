@@ -8,7 +8,7 @@
 				"description": "Base URL for Template Files",
 				"artifactsBaseUrl": ""
 			},
-			"defaultValue": "https://raw.githubusercontent.com/m1v1m2v2/practiceopenshift/master"
+			"defaultValue": ""
 		},
 		"masterVmSize": {
 			"type": "string",
@@ -2054,6 +2054,9 @@
 					},
 					"openshiftMasterHostname": {
 						"value": "[variables('openshiftMasterHostname')]"
+					},
+					"openshiftMasterPublicIPFqdn": {
+						"value": "ocpcluster-master-0.local"
 					},
 					"openshiftInfraHostname": {
 						"value": "[variables('openshiftInfraHostname')]"
