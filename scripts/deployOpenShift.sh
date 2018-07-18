@@ -289,7 +289,7 @@ echo $(date) " - Prerequisites check complete"
 
 # Initiating installation of OpenShift Container Platform using Ansible Playbook
 echo $(date) " - Installing OpenShift Container Platform via Ansible Playbook"
-runuser -l $SUDOUSER -c "ansible-playbook -f 10 /usr/share/ansible/openshift-ansible/playbooks/deploy_cluster.yml"
+runuser -l $SUDOUSER -c "ansible-playbook -f 10 /usr/share/ansible/openshift-ansible/playbooks/deploy_cluster.yml > /var/log/mbmsdeploycluster.log"
 if [ $? -eq 0 ]
 then
     echo $(date) " - OpenShift Cluster installed successfully"

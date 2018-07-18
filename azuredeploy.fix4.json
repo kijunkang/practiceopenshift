@@ -1266,7 +1266,9 @@
 				"ipConfigurations": [{
 					"name": "[concat(variables('openshiftBastionHostname'), 'ipconfig')]",
 					"properties": {
-						"publicIPAddress": "[variables('bastionPublicIp')]",
+						"publicIPAddress": {
+							"id": "[resourceid('microsoft.network/publicIPaddresses', variables('bastionpublicip'))]",
+						},
 						"privateIPAllocationMethod": "Dynamic",
 						
 						"subnet": {

@@ -1266,6 +1266,10 @@
 				"ipConfigurations": [{
 					"name": "[concat(variables('openshiftBastionHostname'), 'ipconfig')]",
 					"properties": {
+						"publicIPAddress": {
+							"id": "[resourceid('microsoft.network/publicIPaddresses', variables('bastionpublicip'))]"
+						},
+
 						"privateIPAllocationMethod": "Dynamic",
 						
 						"subnet": {
@@ -2106,7 +2110,9 @@
 					"aadClientSecret": {
 						"value": "[parameters('aadClientSecret')]"
 					},
-					
+					"nipioDomain": {
+						"value": "10.1.0.4.nip.io"
+					},
 					"customDomain": {
 						"value": "[variables('defaultSubDomain')]"
 					},
